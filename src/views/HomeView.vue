@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted } from 'vue'
-import { Phone, Zap, Battery, Cpu, Wrench, Car, ShieldCheck, Clock, MapPin, MessageCircle } from '@lucide/vue'
+import { Phone, Zap, Battery, Cpu, Wrench, Car, ShieldCheck, Clock, MapPin, MessageCircle, LucideCircleCheck } from '@lucide/vue'
 import heroImg from '@/assets/hero.jpg'
 
 onMounted(() => {
@@ -28,6 +28,7 @@ const stats = [
 ]
 
 const benefits = [
+  { icon: LucideCircleCheck, t: 'Не починили — не платите', d: 'Работаем на качество, если не смогли решить проблему — деньги не берём' },
   { icon: Clock,       t: 'Приедем в течение часа',     d: 'Мобильная служба по всей Астане' },
   { icon: Cpu,         t: 'Современное оборудование',   d: 'Дилерские сканеры Launch, Autel, осциллограф' },
 ]
